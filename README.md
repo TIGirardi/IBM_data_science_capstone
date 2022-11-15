@@ -1,2 +1,2 @@
-# IBM_data_science_capstone
+# IBM Data Science Capstone Course
 Notebooks for peer review
