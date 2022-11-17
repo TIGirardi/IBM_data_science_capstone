@@ -77,6 +77,7 @@ def get_pie_chart(site):
             values='Total Success',
             title='Total Success Launches by Site'
         )
+        fig.update_traces(textinfo='value')
     else:
         success = df.loc[site, 'class']
         failure = groups.count().loc[site, 'class'] - success
@@ -86,6 +87,7 @@ def get_pie_chart(site):
             color=['blue', 'red'],
             title=f'Total Success Launches for Site {site}'
         )
+        fig.update_traces(textinfo='percent')
     return fig
 
 # TASK 4:
